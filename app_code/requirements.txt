@@ -1,0 +1,16 @@
+altgraph==0.17.3
+asgiref==3.7.2
+colorama==0.4.6
+Django==4.2.4
+et-xmlfile==1.1.0
+openpyxl==3.1.2
+pefile==2023.2.7
+Pillow==10.0.0
+pyinstaller==5.13.0
+pyinstaller-hooks-contrib==2023.6
+pypng==0.20220715.0
+pywin32-ctypes==0.2.2
+qrcode==7.4.2
+sqlparse==0.4.4
+typing_extensions==4.7.1
+tzdata==2023.3

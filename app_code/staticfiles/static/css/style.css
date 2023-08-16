@@ -1,0 +1,56 @@
+body{
+    background: linear-gradient(to right, #181fd3, #2df1ef);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 25px;
+    margin: 15px;
+}
+
+.form label{
+    margin: 10px;
+    font-size: 600;
+    font-weight: bolder;
+}
+
+.form input{
+    margin: 15px;
+    font-size: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+button{
+    color: white;
+    background-color: blue;
+    box-sizing: border-box;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+button:hover{
+    opacity: .7;
+    cursor: pointer;
+}

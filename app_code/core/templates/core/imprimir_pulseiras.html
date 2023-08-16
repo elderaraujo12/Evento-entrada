@@ -1,0 +1,12 @@
+<form method="post">
+    {% csrf_token %}
+    <ul>
+        {% for pulseira in pulseiras %}
+            <li>
+                {{ pulseira.codigo_pulseira }}
+                <input type="checkbox" name="pulseiras" value="{{ pulseira.id }}">
+            </li>
+        {% endfor %}
+    </ul>
+    <button type="submit">Imprimir</button>
+</form>

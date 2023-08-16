@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="main">
+    <h1>INSTITUTO DOM BARRETO</h1>
+    <H2>XXXVIII GINCANA CULTURAL</H2>
+    <P>TERESINA, MEU AMOR</P>
+    <div class="foto">
+        <img src="{% static 'img/linde-logo.png' %}" alt="">
+    </div>
+
+    <h1>Verificação de Código</h1>
+    <form method="post" action="{% url 'home' %}">
+        {% csrf_token %}
+        <label for="codigo">Digite o código:</label>
+        <input type="number" name="codigo" id="codigo" required>
+        <button type="submit">Verificar</button>
+    </form>
+    {% if mensagem %}
+    <p>{{ mensagem }}</p>
+    {% endif %}
+</div>
+{% endblock %}
